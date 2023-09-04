@@ -1,3 +1,15 @@
+# Software Engineering and DevOps Resources
+
+This app will include resources recommended by users for engineers of all levels. These will include:
+
+- books
+- articles
+- videos
+- courses
+- communities
+- products
+- websites
+
 # Resources
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
