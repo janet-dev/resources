@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { MaterialDesignModule } from './material-design/material-design.module';
+import { ResourcesComponent } from './resources/resources/resources.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MaterialDesignModule } from './material-design/material-design.module';
     AppRoutingModule,
     MaterialDesignModule,
     BrowserAnimationsModule,
-    LoginComponent
+    LoginComponent,
+    ResourcesComponent,
   ],
   exports: [],
   providers: [],
