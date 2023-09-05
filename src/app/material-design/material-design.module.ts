@@ -9,6 +9,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatToolbarModule,
     MatDividerModule,
     MatProgressSpinnerModule,
-
+    MatGridListModule,
+    
   ]
 })
 export class MaterialDesignModule { }
