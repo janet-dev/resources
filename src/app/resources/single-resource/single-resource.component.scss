@@ -1,4 +1,8 @@
 img {
-    width: 100%;
-    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.mat-mdc-card-header {
+    justify-content: center;
+    padding: 16px;
 }

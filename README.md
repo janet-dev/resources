@@ -10,7 +10,12 @@ This app will include resources recommended by users for engineers of all levels
 - products
 - websites
 
-# Resources
+# Credits
+
+[Library photo](https://unsplash.com/@paul__schafer) by Paul Schafer on Unsplash.
+  
+
+# Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
 
