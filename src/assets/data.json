@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "category": "book",
+        "name": "Learning Angular",
+        "description": "A no-nonsense guide to building web applications with Angular 15, 4th Edition Paperback – 23 Feb. 2023",
+        "website": "https://www.packtpub.com/product/learning-angular-fourth-edition/9781803240602",
+        "price": "31.99",
+        "imageUrl": "https://d1b14unh5d6w7g.cloudfront.net/1803240601.01.S001.JUMBOXXX.jpg?Expires=1694086341&Signature=FHJlOEnqnkTHDy16sRY86WqkQZ4Gd77UluZ6pXRv2nn8jTG6SFT~6706mFEbzuCVJPtJcmJzMkfUs-QNzU0x5dfyErIkVLI61Ucf7hxWZX-~IVzsWTieLqtacmZQFxI82g5OjSFhaupaizm3AN5sgzjiz9FUPycF8t8E~TKMfWQ_&Key-Pair-Id=APKAIUO27P366FGALUMQ"
+    },
+    {
+        "id": 2,
+        "category": "book",
+        "name": "Think Python 2e",
+        "description": "Think Python is an introduction to Python programming for beginners. It uses Python3.",
+        "website": "https://greenteapress.com/wp/think-python-2e/",
+        "price": "0",
+        "imageUrl": "http://greenteapress.com/thinkpython2/think_python2_medium.jpg"
+    },
+    {
+        "id": 3,
+        "category": "app",
+        "name": "SoloLearn",
+        "description": "Mobile app and desktop learning platform. Includes web dev, Python, Java, C#, Angular.",
+        "website": "https://www.sololearn.com/",
+        "price": "0",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1410707398021550084/MmGTT4dY_400x400.jpg"
+    },
+    {
+        "id": 4,
+        "category": "meetup",
+        "name": "codebar",
+        "description": "Regular programming workshops trying to bridge the diversity gap! We are all about community and making a difference.",
+        "website": "https://codebar.io/",
+        "price": "0",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1085967660582526977/mAbluXvA_400x400.jpg"
+    },
+    {
+        "id": 5,
+        "category": "video",
+        "name": "Angular Material Course 2022",
+        "description": "Angular 14",
+        "website": "https://www.youtube.com/watch?v=DaE_RpWRlJI&t=4285s",
+        "price": "0",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1233770296336953345/NsZ5uQsd_400x400.jpg"
+    },
+    {
+        "id": 6,
+        "category": "",
+        "name": "",
+        "description": "",
+        "website": "",
+        "price": "0",
+        "imageUrl": ""
+    },
+    {
+        "id": 7,
+        "category": "",
+        "name": "",
+        "description": "",
+        "website": "",
+        "price": "0",
+        "imageUrl": ""
+    }
+
+]

@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { MaterialDesignModule } from './material-design/material-design.module';
 import { ResourcesComponent } from './resources/resources/resources.component';
+import { ResourceDetailComponent } from './resources/resource-detail/resource-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ResourcesComponent } from './resources/resources/resources.component';
     BrowserAnimationsModule,
     LoginComponent,
     ResourcesComponent,
+    ResourceDetailComponent
   ],
   exports: [],
   providers: [],
