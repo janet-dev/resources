@@ -1,5 +1,7 @@
 # Software Engineering and DevOps Resources
 
+Origin of the app's name **bōc-hord** is Old English meaning library or collection of books. [Link to meaning of bōc-hord](https://oldenglishwordhord.com/2020/08/25/boc-hord/) 
+
 This app will include resources recommended by users for engineers of all levels. These will include:
 
 - books
@@ -40,10 +42,20 @@ This app will include resources recommended by users for engineers of all levels
 - configure notifications
 - add profile page
 - etc.
+- upgrade to Angular 16 when finished
 
 # Credits
 
-[Library photo](https://unsplash.com/@paul__schafer) by Paul Schafer on Unsplash.
+[Link to Angular Material Course 2022](https://www.youtube.com/watch?v=DaE_RpWRlJI&t=4285s) from Bitfumes, which inspired this project.
+
+[Link to Bitfumes' course on GitHub](https://github.com/bitfumes/angular-material-2022/tree/main) by @sarthaksavvy.
+
+[Link to V15 Angular Material](https://v15.material.angular.io/) which was used to style this project.
+
+[Link to article: Reading data from JSON file using HttpClient](https://medium.com/@anooprvarrier/angular-reading-data-from-json-file-using-httpclient-3c46ba1aaf22) by Anoop R Warrier on Medium.
+
+[Link to library photo](https://unsplash.com/@paul__schafer) by Paul Schafer on Unsplash.
+
   
 ---
 

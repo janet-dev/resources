@@ -8,6 +8,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { MaterialDesignModule } from './material-design/material-design.module';
 import { ResourcesComponent } from './resources/resources/resources.component';
 import { ResourceDetailComponent } from './resources/resource-detail/resource-detail.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ResourceDetailComponent } from './resources/resource-detail/resource-de
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     MaterialDesignModule,
     BrowserAnimationsModule,
     LoginComponent,

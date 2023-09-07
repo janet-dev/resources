@@ -13,6 +13,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import {MatMenuModule} from '@angular/material/menu';
     MatChipsModule,
     MatBadgeModule,
     MatMenuModule,
+    MatTableModule,
   ]
 })
 export class MaterialDesignModule { }
