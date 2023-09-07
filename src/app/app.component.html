@@ -1,7 +1,17 @@
 <mat-toolbar color="primary" class="flex justify-content-between">
   bōc-hord
   <a routerLink="resources" href="" mat-stroked-button>Resources</a>
-  <a routerLink="login" href="" mat-stroked-button>Login</a>
+
+
+  <div class="demo-section">
+    <mat-icon id="icon-bell" matBadge="15" matBadgeColor="warn">notifications</mat-icon>
+      <!-- Include text description of the icon's meaning for screen-readers -->
+      <span class="cdk-visually-hidden">
+        Example with a bell icon with overlaid badge showing the number 15
+      </span>
+      
+    <a routerLink="login" mat-stroked-button>Login</a>
+  </div>
 
 </mat-toolbar>
 
