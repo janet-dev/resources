@@ -10,10 +10,42 @@ This app will include resources recommended by users for engineers of all levels
 - products
 - websites
 
+# Project - current version
+
+## Screenshots
+
+### Home page
+
+<h2 align="left"><img src="./docs/pictures/home.png"></h2>
+
+### Login page
+
+<h2 align="left"><img src="./docs/pictures/login.png"></h2>
+
+### Resources
+
+<h2 align="left"><img src="./docs/pictures/resources.png"></h2>
+
+### Resource detail
+
+<h2 align="left"><img src="./docs/pictures/detail.png"></h2>
+
+# Project - still to do
+
+- add content to home page
+- use data.json to populate content
+- configure login component
+    - might use Google Firebase
+- add registration component
+- configure notifications
+- add profile page
+- etc.
+
 # Credits
 
 [Library photo](https://unsplash.com/@paul__schafer) by Paul Schafer on Unsplash.
   
+---
 
 # Project
 
