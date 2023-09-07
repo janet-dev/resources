@@ -2,14 +2,20 @@
   bōc-hord
   <a routerLink="resources" href="" mat-stroked-button>Resources</a>
 
-
   <div class="demo-section">
-    <mat-icon id="icon-bell" matBadge="15" matBadgeColor="warn">notifications</mat-icon>
-      <!-- Include text description of the icon's meaning for screen-readers -->
-      <span class="cdk-visually-hidden">
-        Example with a bell icon with overlaid badge showing the number 15
-      </span>
-      
+    
+    <button mat-icon-button color="accent"
+            aria-label="bell icon button with overlaid badge showing a number"
+            [matMenuTriggerFor]="menu">
+      <mat-icon id="icon-bell" matBadge="15" matBadgeColor="warn">
+        notifications</mat-icon>
+    </button>
+
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>New book added</button>
+      <button mat-menu-item>New video added</button>
+    </mat-menu>
+
     <a routerLink="login" mat-stroked-button>Login</a>
   </div>
 
