@@ -20,23 +20,28 @@ This app will include resources recommended by users for engineers of all levels
 
 <h2 align="left"><img src="./docs/pictures/home.png"></h2>
 
-### Login page
+### Login page on /login
 
 <h2 align="left"><img src="./docs/pictures/login.png"></h2>
 
-### Resources
+### Resources on /resources
 
 <h2 align="left"><img src="./docs/pictures/resources.png"></h2>
 
-### Resource detail
+### Resource detail on /resources/detail
 
 <h2 align="left"><img src="./docs/pictures/detail.png"></h2>
+
+### Table in /admin/resources
+
+<h2 align="left"><img src="./docs/pictures/admin-table.png"></h2>
+
 
 # Project - still to do
 
 - add content to home page
 - use data.json to populate content
-- configure login component
+- configure login component (reactive forms)
     - might use Google Firebase
 - add registration component
 - configure notifications

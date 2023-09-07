@@ -15,6 +15,18 @@ export class AdminResourcesComponent {
   public resourceInfo: any;
   public constructor(private http: HttpClient) {}
 
+  displayedColumns: string[] = [
+    'id', 
+    'category', 
+    'name', 
+    'description',
+    'website',
+    'price',
+    'imageUrl',
+    'tag',
+    'createdBy'
+  ];
+
   public ngOnInit(): void {
     const url: string = '/assets/data.json';
     this.http.get(url).subscribe((response) => {

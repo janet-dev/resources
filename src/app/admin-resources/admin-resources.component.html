@@ -1,8 +1,33 @@
-<h1 class="text-white">All Resources</h1>
+<h1><strong>Admin Page: </strong>All Resources</h1>
+
+<table mat-table [dataSource]="resourceInfo" class="mat-elevation-z8">
+    <mat-text-column name="id"></mat-text-column>
+    <mat-text-column name="category"></mat-text-column>
+    <mat-text-column name="name"></mat-text-column>
+    <mat-text-column name="description"></mat-text-column>
+    <mat-text-column name="website"></mat-text-column>
+    <mat-text-column name="price"></mat-text-column>
+    <mat-text-column name="imageUrl"></mat-text-column>
+    <mat-text-column name="tag"></mat-text-column>
+    <mat-text-column name="createdBy"></mat-text-column>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let eachRow; columns: displayedColumns"></tr>
+  </table>
+
+
 
 <h1>
   Resource info from assets/data.json
 </h1>
 <p>
-  {{ resourceInfo | json }}
+    {{ resourceInfo[0]['name'] | json }}
 </p>
+<p>
+  {{ resourceInfo[0] | json }}
+</p>
+<p>
+    {{ resourceInfo | json }}
+</p>
+<p>.</p> 
+  
