@@ -10,6 +10,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatDividerModule,
     MatProgressSpinnerModule,
     MatGridListModule,
+    MatChipsModule,
     
   ]
 })

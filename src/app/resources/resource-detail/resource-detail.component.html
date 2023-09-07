@@ -1,1 +1,29 @@
-<p>resource-detail works!</p>
+<mat-card class="example-card text-white">
+    <div class="padding-extra">
+        <mat-card-header>
+        <mat-card-title-group>
+            <mat-card-title>Resource title</mat-card-title>
+            <mat-card-subtitle>Category</mat-card-subtitle>
+            <img mat-card-md-image src="./assets/images/books.jpg" >
+        </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+            Important, too (for Standalone Components in your case): 
+            In your app.component.ts you need to import RouterLink, too.
+            Important, too (for Standalone Components in your case): 
+            In your app.component.ts you need to import RouterLink, too.
+            Important, too (for Standalone Components in your case): 
+            In your app.component.ts you need to import RouterLink, too.
+            Important, too (for Standalone Components in your case): 
+            In your app.component.ts you need to import RouterLink, too.
+        </mat-card-content>
+    </div>
+    <mat-card-footer class="padding-extra">
+        <mat-chip-listbox aria-label="Tag selection">
+            <mat-chip-option>JS</mat-chip-option>
+            <mat-chip-option>TS</mat-chip-option>
+            <mat-chip-option color="accent" selected>Angular</mat-chip-option>
+            <mat-chip-option color="warn">React</mat-chip-option>
+          </mat-chip-listbox>
+    </mat-card-footer>
+  </mat-card>
