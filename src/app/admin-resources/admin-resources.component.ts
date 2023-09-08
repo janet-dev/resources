@@ -24,7 +24,9 @@ export class AdminResourcesComponent {
     'price',
     'imageUrl',
     'tag',
-    'createdBy'
+    'createdBy',
+    'date',
+    'actions'
   ];
 
   public ngOnInit(): void {

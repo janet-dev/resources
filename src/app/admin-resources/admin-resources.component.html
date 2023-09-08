@@ -7,9 +7,32 @@
     <mat-text-column name="description"></mat-text-column>
     <mat-text-column name="website"></mat-text-column>
     <mat-text-column name="price"></mat-text-column>
-    <mat-text-column name="imageUrl"></mat-text-column>
+
+    <ng-container matColumnDef="imageUrl">
+      <th mat-header-cell *matHeaderCellDef> Thumbnail </th>
+      <td mat-cell *matCellDef="let data">
+        <img [src]="data.imageUrl" alt="Resource image"> 
+      </td>
+    </ng-container>
+
     <mat-text-column name="tag"></mat-text-column>
-    <mat-text-column name="createdBy"></mat-text-column>
+
+    <ng-container matColumnDef="createdBy">
+      <th mat-header-cell *matHeaderCellDef> Created By </th>
+      <td mat-cell *matCellDef="let data"> {{data.createdBy}} </td>
+    </ng-container>
+
+    <mat-text-column name="date"></mat-text-column>
+
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef> Actions </th>
+      <td mat-cell *matCellDef="let data">
+         <button mat-raised-button color="primary">Edit</button>
+         <button mat-raised-button color="warn">Delete</button>
+        </td>
+    </ng-container>
+
+
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let eachRow; columns: displayedColumns"></tr>
