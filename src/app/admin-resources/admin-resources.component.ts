@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 
 import { MaterialDesignModule } from '../material-design/material-design.module';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-admin-resources',
@@ -13,7 +14,10 @@ import { MaterialDesignModule } from '../material-design/material-design.module'
 })
 export class AdminResourcesComponent {
   public resourceInfo: any;
-  public constructor(private http: HttpClient) {}
+  public constructor(
+    private http: HttpClient,
+    public dialog: MatDialog
+    ) {}
 
   displayedColumns: string[] = [
     'id', 
@@ -36,7 +40,14 @@ export class AdminResourcesComponent {
     });
   }
 
-  delete() {
-    alert('Hello!')
+  delete(id: number) {
+    this.dialog.open(DeleteDialog);
   }
+
 }
+
+@Component({
+  selector: 'delete-dialog',
+  template: 'Delete? Are you sure?'
+})
+export class DeleteDialog {}

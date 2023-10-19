@@ -29,7 +29,7 @@
       <td mat-cell *matCellDef="let data">
         <button mat-raised-button color="primary">Edit</button>
         <button mat-raised-button color="warn"
-          (click)="delete()">Delete</button>
+          (click)="delete(data.id)">Delete</button>
         </td>
     </ng-container>
 

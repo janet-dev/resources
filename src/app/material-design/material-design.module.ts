@@ -14,6 +14,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTableModule} from '@angular/material/table';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import {MatTableModule} from '@angular/material/table';
     MatBadgeModule,
     MatMenuModule,
     MatTableModule,
+    MatDialogModule,
   ]
 })
 export class MaterialDesignModule { }
