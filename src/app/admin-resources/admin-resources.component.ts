@@ -35,4 +35,8 @@ export class AdminResourcesComponent {
       this.resourceInfo = response;
     });
   }
+
+  delete() {
+    alert('Hello!')
+  }
 }
