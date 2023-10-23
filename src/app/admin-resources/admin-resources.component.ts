@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { MaterialDesignModule } from '../material-design/material-design.module';
 import { MatDialog } from '@angular/material/dialog';
+import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component';
 
 @Component({
   selector: 'app-admin-resources',
@@ -41,13 +42,7 @@ export class AdminResourcesComponent {
   }
 
   delete(id: number) {
-    this.dialog.open(DeleteDialog);
+    this.dialog.open(DeleteDialogComponent);
   }
 
 }
-
-@Component({
-  selector: 'delete-dialog',
-  template: 'Delete? Are you sure?'
-})
-export class DeleteDialog {}
