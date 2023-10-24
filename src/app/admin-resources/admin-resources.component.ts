@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 
 import { MaterialDesignModule } from '../material-design/material-design.module';
-import { MatDialog } from '@angular/material/dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component';
 
 @Component({
   selector: 'app-admin-resources',
   standalone: true,
-  imports: [CommonModule, MaterialDesignModule],
+  imports: [CommonModule, MaterialDesignModule, MatDialogModule],
   templateUrl: './admin-resources.component.html',
   styleUrls: ['./admin-resources.component.scss']
 })
@@ -41,8 +41,20 @@ export class AdminResourcesComponent {
     });
   }
 
-  delete(id: number) {
-    this.dialog.open(DeleteDialogComponent);
+  openDialog(id: number) {
+    
+    const dialogRef = this.dialog.open(DeleteDialogComponent, {
+      data: { title: `Hide resource: ${id}` }
+    });
+
+    dialogRef.afterClosed().subscribe((result) => {
+      if (result === "true") {
+        console.log('resource: ', this.resourceInfo[id-1])
+        // add code to hide resource - cannot delete data from files
+        alert(`Resource ${id} is hidden`);
+      }
+    });
+
   }
 
 }

@@ -29,7 +29,7 @@
       <td mat-cell *matCellDef="let data">
         <button mat-raised-button color="primary">Edit</button>
         <button mat-raised-button color="warn"
-          (click)="delete(data.id)">Delete</button>
+          (click)="openDialog(data.id)">Hide</button>
         </td>
     </ng-container>
 
@@ -40,16 +40,17 @@
   </table>
 
 
-
-<h1>
-  Resource info from assets/data.json
-</h1>
+<!-- Just checking the format of the json data -->
+<h1>Resource info from assets/data.json</h1>
+<h2>Name of resource number 1</h2>
 <p>
     {{ resourceInfo[0]['name'] | json }}
 </p>
+<h2>Resource number 1</h2>
 <p>
   {{ resourceInfo[0] | json }}
 </p>
+<h2>All resources</h2>
 <p>
     {{ resourceInfo | json }}
 </p>

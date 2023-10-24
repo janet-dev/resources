@@ -1,8 +1,10 @@
-<h1 mat-dialog-title>Delete</h1>
-<div mat-dialog-content>
-  Would you like to delete this resource?
-</div>
-<div mat-dialog-actions>
-  <button mat-button (click)="close()">Cancel</button>
-  <button mat-button mat-dialog-close cdkFocusInitial>Delete</button>
+<div class="dialog">
+  <h1 mat-dialog-title>{{ data?.title }}</h1>
+  <div mat-dialog-content>
+    Are you sure?
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button mat-dialog-close="true">Hide</button>
+  </div>
 </div>
