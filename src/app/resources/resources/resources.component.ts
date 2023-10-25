@@ -21,13 +21,15 @@ export class ResourcesComponent implements OnInit{
   
   // dependency injection provided by Angular
   // inject the service in the constructor
-  constructor(public resourcesService: ResourcesService) {}
+  constructor(
+    public resourcesService: ResourcesService,
+    ) {}
 
   ngOnInit(): void {
     this.resourcesService.getResources().pipe(
       take(1)
     ).subscribe();
   }
-
   
+
 }

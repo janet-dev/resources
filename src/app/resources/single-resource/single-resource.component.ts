@@ -16,13 +16,12 @@ import { ResourcesService } from 'src/app/services/resources.service';
   styleUrls: ['./single-resource.component.scss']
 })
 export class SingleResourceComponent {
-  constructor(public resourcesService: ResourcesService) {}
+  @Input() fromResources: any;
 
-  @Input() item: any;
+  constructor(public resourcesService: ResourcesService) {}
 
   //public ngOnInit(): void {}
   ngOnInit(): void {
-    this.item = this.resourcesService.getResources().subscribe();
   }
 
 }
