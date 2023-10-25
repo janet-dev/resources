@@ -1,19 +1,7 @@
 <div class="display-center flex">
     <div class="flex-columns">
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
-        <div><app-single-resource></app-single-resource></div>
+        <ng-container *ngFor="let item of (resourcesService.data$ | async)">
+            <div><app-single-resource></app-single-resource></div>
+        </ng-container>
     </div>
 </div>

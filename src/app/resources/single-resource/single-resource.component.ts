@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
 import { RouterLink } from '@angular/router';
+import { ResourcesService } from 'src/app/services/resources.service';
 
 @Component({
   selector: 'app-single-resource',
@@ -15,5 +16,13 @@ import { RouterLink } from '@angular/router';
   styleUrls: ['./single-resource.component.scss']
 })
 export class SingleResourceComponent {
+  constructor(public resourcesService: ResourcesService) {}
+
+  @Input() item: any;
+
+  //public ngOnInit(): void {}
+  ngOnInit(): void {
+    this.item = this.resourcesService.getResources().subscribe();
+  }
 
 }
