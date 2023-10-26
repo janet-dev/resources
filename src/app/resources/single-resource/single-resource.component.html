@@ -1,11 +1,13 @@
-<a routerLink="detail" href="">
-    <mat-card class="example-card">
-        <mat-card-header>
-        <mat-card-title>{{ fromResources.name }}</mat-card-title>
-        <mat-card-subtitle>{{ fromResources.category }}</mat-card-subtitle>
-        </mat-card-header>
+
+<mat-card class="example-card">
+    <mat-card-header>
+    <mat-card-title>{{ fromResources.name }}</mat-card-title>
+    <mat-card-subtitle>{{ fromResources.category }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <a routerLink="detail" href="">
         <img mat-card-image 
             src="{{ fromResources.imageUrl }}"
             alt="Books image linking to detail page">
-    </mat-card>
-</a>
+    </a>
+</mat-card>
