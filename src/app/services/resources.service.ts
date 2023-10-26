@@ -21,4 +21,14 @@ export class ResourcesService {
     );
   }
 
+  private resourceData: any; // You can define a type that matches your data structure
+
+  setResourceData(data: any) {
+    this.resourceData = data;
+  }
+
+  getResourceData() {
+    return this.resourceData;
+  }
+
 }

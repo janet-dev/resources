@@ -1,7 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { ResourcesService } from 'src/app/services/resources.service';
 
 @Component({
@@ -18,10 +18,33 @@ import { ResourcesService } from 'src/app/services/resources.service';
 export class SingleResourceComponent {
   @Input() fromResources: any;
 
-  constructor(public resourcesService: ResourcesService) {}
+  @Output() fromResourcesData: any;
+
+  constructor(public resourcesService: ResourcesService, private router: Router) {}
 
   //public ngOnInit(): void {}
   ngOnInit(): void {
   }
+
+  // get key-value pair data from clicked resource
+  details() {
+    const fromResourcesData = {
+      id: this.fromResources.id, 
+      category: this.fromResources.category, 
+      name: this.fromResources.name, 
+      description: this.fromResources.description,
+      website: this.fromResources.website,
+      price: this.fromResources.price,
+      imageUrl: this.fromResources.imageUrl,
+      tag: this.fromResources.tag,
+      createdBy: this.fromResources.createdBy,
+      date: this.fromResources.date,
+    }
+    console.log(fromResourcesData);
+
+    // Set the data in the service
+    this.resourcesService.setResourceData(fromResourcesData);
+  }
+
 
 }
