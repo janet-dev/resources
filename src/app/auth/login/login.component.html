@@ -25,7 +25,7 @@
                 <mat-divider></mat-divider>
 
                 <mat-card-actions>
-                    <button (click)="login()" type="submit" color="accent" mat-raised-button>
+                    <button (click)="login()" type="submit" color="warn" mat-raised-button>
                         <mat-spinner *ngIf="isLoading" diameter="30"></mat-spinner>
                         <span *ngIf="!isLoading">Login</span>
                     </button>
