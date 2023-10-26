@@ -26,7 +26,7 @@ export class SingleResourceComponent {
   ngOnInit(): void {
   }
 
-  // get key-value pair data from clicked resource
+  // get key-value pair data from clicked resource for resources-detail
   details() {
     const fromResourcesData = {
       id: this.fromResources.id, 

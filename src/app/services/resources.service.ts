@@ -7,7 +7,8 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
   providedIn: 'root'
 })
 export class ResourcesService {
-
+  
+  // get data from data.json file
   private _data$$ = new BehaviorSubject<ResourceModel[]>([]);
   get data$() {return this._data$$.asObservable()};
 
@@ -21,7 +22,9 @@ export class ResourcesService {
     );
   }
 
-  private resourceData: any; // You can define a type that matches your data structure
+
+  // data from single-resource to resource detail
+  private resourceData: any;
 
   setResourceData(data: any) {
     this.resourceData = data;

@@ -2,21 +2,27 @@
     <div class="padding-extra">
         <mat-card-header>
         <mat-card-title-group>
-            <mat-card-title>{{resourceData.name}}</mat-card-title>
-            <mat-card-subtitle>{{resourceData.category}}</mat-card-subtitle>
-            <img mat-card-md-image src="{{resourceData.imageUrl}}" >
+            <mat-card-title>{{resourceData.name | titlecase}}</mat-card-title>
+            <mat-card-subtitle>{{resourceData.category | titlecase}}</mat-card-subtitle>
+            <a href="{{resourceData.website}}" target="_blank">
+                <img mat-card-md-image 
+                    src="{{resourceData.imageUrl}}"
+                    alt="Resource logo linking to their website">
+            </a>
         </mat-card-title-group>
         </mat-card-header>
         <mat-card-content>
             {{resourceData.description}}
+            <mat-card-subtitle>Click the image to visit the website...</mat-card-subtitle>
+
         </mat-card-content>
     </div>
     <mat-card-footer class="padding-extra">
         <mat-chip-listbox aria-label="Tag selection">
-            <mat-chip-option>JS</mat-chip-option>
-            <mat-chip-option>TS</mat-chip-option>
-            <mat-chip-option color="accent" selected>{{resourceData.tag}}</mat-chip-option>
-            <mat-chip-option color="warn">React</mat-chip-option>
+            <mat-chip-option disabled>JS</mat-chip-option>
+            <mat-chip-option disabled>TS</mat-chip-option>
+            <mat-chip-option selected disabled>{{resourceData.tag | titlecase}}</mat-chip-option>
+            <mat-chip-option disabled>React</mat-chip-option>
           </mat-chip-listbox>
     </mat-card-footer>
   </mat-card>
