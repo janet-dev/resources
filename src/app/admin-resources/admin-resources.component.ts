@@ -13,6 +13,12 @@ import { DeleteDialogComponent } from '../delete-dialog/delete-dialog.component'
   templateUrl: './admin-resources.component.html',
   styleUrls: ['./admin-resources.component.scss']
 })
+
+/*
+Manages and displays resource information, 
+allowing users to hide or perform actions on specific resources through a dialog. 
+The resource data is fetched from a JSON file during initialization.
+*/
 export class AdminResourcesComponent {
   public resourceInfo: any;
   public constructor(
@@ -38,7 +44,9 @@ export class AdminResourcesComponent {
     const url: string = '/assets/data.json';
     this.http.get(url).subscribe((response) => {
       this.resourceInfo = response;
+      console.log('resourceInfo: ', this.resourceInfo);
     });
+    
   }
 
   openDialog(id: number) {

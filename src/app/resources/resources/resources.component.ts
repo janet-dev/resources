@@ -19,8 +19,11 @@ import { take } from 'rxjs';
 })
 export class ResourcesComponent implements OnInit{
   
-  // dependency injection provided by Angular
-  // inject the service in the constructor
+/*
+This depends on the ResourcesService for fetching resource data. 
+The component's ngOnInit method is used to trigger the HTTP request to fetch the data from the service, 
+and it only subscribes to the observable for one emission of data.
+*/
   constructor(
     public resourcesService: ResourcesService,
     ) {}
