@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
 import { ResourcesService } from 'src/app/services/resources.service';
 import { SingleResourceComponent } from '../single-resource/single-resource.component';
+import { ResourceModel } from '../models/resource.model';
 
 
 @Component({
@@ -14,7 +15,7 @@ import { SingleResourceComponent } from '../single-resource/single-resource.comp
 })
 export class ResourceDetailComponent implements OnInit{
 
-  resourceData: any;
+  resourceData:  ResourceModel = {} as ResourceModel;
 
   constructor(public resourcesService: ResourcesService) {}
 

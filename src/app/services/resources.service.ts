@@ -31,9 +31,9 @@ export class ResourcesService {
 
 
   // data from single-resource to resource detail
-  private resourceData: any;
+  private resourceData:  ResourceModel = {} as ResourceModel;
 
-  setResourceData(data: any) {
+  setResourceData(data:  ResourceModel) {
     this.resourceData = data;
   }
 

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
 import { Router, RouterLink } from '@angular/router';
 import { ResourcesService } from 'src/app/services/resources.service';
+import { ResourceModel } from '../models/resource.model';
 
 @Component({
   selector: 'app-single-resource',
@@ -16,9 +17,9 @@ import { ResourcesService } from 'src/app/services/resources.service';
   styleUrls: ['./single-resource.component.scss']
 })
 export class SingleResourceComponent {
-  @Input() fromResources: any;
+  @Input() fromResources: ResourceModel = {} as ResourceModel;
 
-  @Output() fromResourcesData: any;
+  @Output() fromResourcesData: ResourceModel = {} as ResourceModel;
 
   constructor(public resourcesService: ResourcesService, private router: Router) {}
 
