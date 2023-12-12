@@ -1,22 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html, body { height: 100vh; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.flex {
-    display: flex;
-}
-
-.justify-content-between {
-    justify-content: space-between;
-}
 
 .m-auto {
     margin: auto;
-}
-
-.text-white {
-    color: #ffffff;
 }
 
 .text-center {

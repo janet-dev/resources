@@ -1,14 +1,15 @@
 
-<mat-card class="example-card">
-    <mat-card-header>
-    <mat-card-title>{{ fromResources.name | titlecase }}</mat-card-title>
-    <mat-card-subtitle>{{ fromResources.category | titlecase }}</mat-card-subtitle>
+<mat-card>
+    <mat-card-header class="justify-center">
+        <mat-card-title>{{ fromResources.name | titlecase }}</mat-card-title>
+        <mat-card-subtitle>{{ fromResources.category | titlecase }}</mat-card-subtitle>
     </mat-card-header>
 
-    <a routerLink="detail" href="">
+    <a routerLink="detail" href="" class="self-center">
         <img mat-card-image 
             src="{{ fromResources.imageUrl }}"
             alt="Books image linking to detail page"
+            class="w-40 p-4"
             (click)="details()">
     </a>
 </mat-card>

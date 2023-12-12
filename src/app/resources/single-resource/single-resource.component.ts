@@ -18,7 +18,7 @@ import { ResourceModel } from '../models/resource.model';
 })
 export class SingleResourceComponent {
   @Input() fromResources: ResourceModel = {} as ResourceModel;
-
+  // forcing TS to treat this empty object as a ResourceModel type
   @Output() fromResourcesData: ResourceModel = {} as ResourceModel;
 
   constructor(public resourcesService: ResourcesService, private router: Router) {}
