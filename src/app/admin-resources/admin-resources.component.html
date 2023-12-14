@@ -1,7 +1,13 @@
 <h1><strong>Admin Page: </strong>All Resources</h1>
 
 <table mat-table [dataSource]="resourceInfo" class="mat-elevation-z8">
-    <mat-text-column name="id"></mat-text-column>
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef> Id </th>
+      <td mat-cell *matCellDef="let data"> 
+        {{ data.id }} 
+      </td>
+    </ng-container>
+
     <mat-text-column name="category"></mat-text-column>
     <mat-text-column name="name"></mat-text-column>
 
