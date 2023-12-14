@@ -1,0 +1,15 @@
+Copilot Notes for Angular & TypeScript/JavaScript
+**************************************************
+
+- CoPilot wasn't able to determine types used in a service
+e.g. in the single-resources component
+
+    // forcing TS to treat this empty object as a ResourceModel type
+    @Output() fromResourcesData: ResourceModel = {} as ResourceModel;
+
+it was not able to determine the type of 'fromResourcesData'
+It tried to force it to be 
+
+    @Output() fromResourcesData: ResourceModel[] = [];
+
+- 
