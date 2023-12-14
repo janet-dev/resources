@@ -4,7 +4,14 @@
     <mat-text-column name="id"></mat-text-column>
     <mat-text-column name="category"></mat-text-column>
     <mat-text-column name="name"></mat-text-column>
-    <mat-text-column name="description"></mat-text-column>
+
+    <ng-container matColumnDef="description">
+      <th mat-header-cell *matHeaderCellDef> Description </th>
+      <td mat-cell *matCellDef="let data"> 
+        {{ (data.description | slice:0:30)+'...' }} 
+      </td>
+    </ng-container>
+
     <mat-text-column name="website"></mat-text-column>
     <mat-text-column name="price"></mat-text-column>
 
