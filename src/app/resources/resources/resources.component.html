@@ -1,7 +1,7 @@
-<div class="display-center flex">
-    <div class="flex-columns">
+<div class="">
+    <div class="flex justify-center flex-wrap">
         <ng-container *ngFor="let item of (resourcesService.data$ | async)">
-            <div>
+            <div class="w-52 h-auto m-2 text-center font-bold text-base">
                 <app-single-resource
                     [fromResources]="item">
                 </app-single-resource>
