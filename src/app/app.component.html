@@ -4,10 +4,11 @@
 
   <div class="demo-section">
     
-    <button mat-icon-button color=""
+    <button mat-icon-button
+      class="mr-2"
             aria-label="bell icon button with overlaid badge showing a number"
             [matMenuTriggerFor]="menu">
-      <mat-icon id="icon-bell" matBadge="2" matBadgeColor="warn">
+      <mat-icon id="icon-bell" class="align-middle" matBadge="2" matBadgeColor="warn">
         notifications</mat-icon>
     </button>
 
@@ -16,7 +17,7 @@
       <button mat-menu-item>New video added</button>
     </mat-menu>
 
-    <a routerLink="login" mat-raised-button class="login-button">Login</a>
+    <a routerLink="login" mat-raised-button class="mb-2">Login</a>
   </div>
 
 </mat-toolbar>
