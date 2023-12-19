@@ -1,3 +1,9 @@
-
-
-  
+/* 
+Tailwind was not able to override Material image settings,
+so used standard css instead to change the Material class
+- view via Chrome DevTools.
+*/
+.mat-mdc-card-lg-image {
+    width: 12rem;
+    height: auto;
+}
