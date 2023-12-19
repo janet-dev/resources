@@ -1,12 +1,12 @@
 <div class="flex">
     <div class="m-auto">
 
-        <mat-card>
+        <mat-card class="mt-20 p-4 w-80">
 
             <mat-card-title>Login Here</mat-card-title>
             <mat-card-subtitle>Enter your email and password to login.</mat-card-subtitle>
 
-            <form action="">
+            <form action="" class="flex flex-col">
 
                 <mat-card-content>
                     <mat-form-field appearance="fill">
@@ -24,7 +24,7 @@
 
                 <mat-divider></mat-divider>
 
-                <mat-card-actions>
+                <mat-card-actions class="mt-2">
                     <button (click)="login()" type="submit" color="warn" mat-raised-button>
                         <mat-spinner *ngIf="isLoading" diameter="30"></mat-spinner>
                         <span *ngIf="!isLoading">Login</span>
