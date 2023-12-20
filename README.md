@@ -16,11 +16,11 @@ This app will include resources recommended by users for engineers of all levels
 
 ## Screenshots
 
-### Home page
+### Home
 
 <h2 align="left"><img src="./docs/pictures/home.png"></h2>
 
-### Login page on /login
+### Login on /login
 
 <h2 align="left"><img src="./docs/pictures/login.png"></h2>
 
@@ -39,27 +39,33 @@ This app will include resources recommended by users for engineers of all levels
 
 # Project - still to do
 
-- add content to home page
-- use data.json to populate content
 - configure login component (reactive forms)
     - might use Google Firebase
 - add registration component
 - configure notifications
 - add profile page
 - etc.
-- upgrade to Angular 16 when finished
+- upgrade to Angular 16/17 when finished
 
 # Credits
 
 [Link to Angular Material Course 2022](https://www.youtube.com/watch?v=DaE_RpWRlJI&t=4285s) from Bitfumes, which inspired this project.
 
-[Link to Bitfumes' course on GitHub](https://github.com/bitfumes/angular-material-2022/tree/main) by @sarthaksavvy.
+[Link to Bitfumes' Material course on GitHub](https://github.com/bitfumes/angular-material-2022/tree/main) by @sarthaksavvy.
 
-[Link to V15 Angular Material](https://v15.material.angular.io/) which was used to style this project.
+[Link to V15 Angular Material](https://v15.material.angular.io/) which was used to structure the user interface.
+
+[Link to Tailwind CSS](https://tailwindcss.com/) which was used to style this project.
 
 [Link to article: Reading data from JSON file using HttpClient](https://medium.com/@anooprvarrier/angular-reading-data-from-json-file-using-httpclient-3c46ba1aaf22) by Anoop R Warrier on Medium.
 
 [Link to library photo](https://unsplash.com/@paul__schafer) by Paul Schafer on Unsplash.
+
+[Link to 'Keep Learning' photo](https://unsplash.com/@fakurian) by Milad Fakurian on Unsplash.
+
+Jake Pritchard for help with the resources service. 
+
+Angular Chapter for constructive feedback.
 
   
 ---
