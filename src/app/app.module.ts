@@ -8,6 +8,8 @@ import { ResourcesComponent } from './resources/resources/resources.component';
 import { ResourceDetailComponent } from './resources/resource-detail/resource-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './auth/login/login.component';
+import { RegisterComponent } from './auth/register/register.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { HomeComponent } from './home/home.component';
     BrowserAnimationsModule,
     HomeComponent,
     ResourcesComponent,
-    ResourceDetailComponent
+    ResourceDetailComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   exports: [],
   providers: [],
