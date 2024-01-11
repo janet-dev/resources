@@ -1,27 +1,19 @@
 <mat-toolbar color="primary" class="flex justify-between p-4">
   <a routerLink="home" class="text-white">bōc-hord</a>
-  <a routerLink="resources" mat-raised-button>Resources</a>
 
   <div class="demo-section">
     
-    <button mat-icon-button
-      class="mr-2"
-            aria-label="bell icon button with overlaid badge showing a number"
-            [matMenuTriggerFor]="menu">
-      <mat-icon id="icon-bell" class="align-middle" matBadge="2" matBadgeColor="warn">
-        notifications</mat-icon>
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+        <mat-icon>more_vert</mat-icon>
     </button>
-
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>New book added</button>
-      <button mat-menu-item>New video added</button>
+        <mat-nav-list>
+            <a mat-list-item routerLink="./{{  nav | lowercase}}" *ngFor="let nav of navList">{{nav}}</a>
+        </mat-nav-list>
     </mat-menu>
-
-    <a routerLink="login" mat-raised-button class="mb-2">Login</a>
-    <a routerLink="register" mat-raised-button class="mb-2 ml-4">Register</a>
+    
   </div>
 
 </mat-toolbar>
-
 
 <router-outlet></router-outlet>

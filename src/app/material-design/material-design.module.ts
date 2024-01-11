@@ -15,6 +15,7 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatTableModule} from '@angular/material/table';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatMenuModule,
     MatTableModule,
     MatDialogModule,
+    MatListModule,
   ]
 })
 export class MaterialDesignModule { }
