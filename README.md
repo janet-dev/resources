@@ -14,6 +14,8 @@ This app will include resources recommended by users for engineers of all levels
 
 # Project - current version
 
+<h2 align="left"><img src="./docs/pictures/ng-version.png"></h2>
+
 ## Screenshots
 
 ### Home
@@ -40,12 +42,11 @@ This app will include resources recommended by users for engineers of all levels
 # Project - still to do
 
 - configure login component (reactive forms)
-    - might use Google Firebase
+    - possibly with Google Firebase
 - add registration component
 - configure notifications
 - add profile page
 - etc.
-- upgrade to Angular 16/17 when finished
 
 # Credits
 
@@ -72,7 +73,7 @@ Angular Chapter for constructive feedback.
 
 # Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
+This project was originally generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9, and subsequently updated to versions 16.2.11, then 17.1.0 [19 Jan 2024].
 
 ## Development server
 
