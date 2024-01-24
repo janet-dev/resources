@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RegisterComponent } from './auth/register/register.component';
     ResourcesComponent,
     ResourceDetailComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    AuthModule
   ],
   exports: [],
   providers: [],

@@ -11,8 +11,9 @@
                 <mat-card-content>
                     <mat-form-field appearance="fill">
                         <mat-label>Email</mat-label>
-                        <input matInput type="email" placeholder="Enter email" required>
+                        <input matInput type="email" placeholder="Enter email" [formControl]="email" required>
                     </mat-form-field>
+                    {{  email.value }}
         
                     <mat-form-field appearance="fill">
                         <mat-label>Password</mat-label>
