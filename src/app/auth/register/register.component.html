@@ -4,7 +4,7 @@
         <mat-card class="mt-20 p-4 w-80">
 
             <mat-card-title>Register Here</mat-card-title>
-            <mat-card-subtitle>Enter your email and password</mat-card-subtitle>
+            <mat-card-subtitle>Enter email & create password</mat-card-subtitle>
 
             <form action="" class="flex flex-col">
 
@@ -17,19 +17,20 @@
                     <mat-form-field appearance="fill">
                         <mat-label>Password</mat-label>
                         <input matInput type="password" placeholder="Enter password" required>
-                    </mat-form-field>      
+                    </mat-form-field>
+                    
+                                        
+                    <mat-form-field appearance="fill">
+                        <mat-label>Confirm Password</mat-label>
+                        <input matInput type="password" placeholder="Confirm password" required>
+                    </mat-form-field>
+
                 </mat-card-content>
 
                 <mat-divider></mat-divider>
 
                 <mat-card-actions class="mt-2">
-                    <button (click)="register()" type="submit" color="warn" mat-raised-button>
-                        @if (isLoading) {
-                            <mat-spinner diameter="30"></mat-spinner>
-                        } @else {
-                            <span>Login</span>
-                        } 
-                    </button>
+                    <button (click)="register()" type="submit" color="warn" mat-raised-button>Register</button>
                 </mat-card-actions>
 
             </form>

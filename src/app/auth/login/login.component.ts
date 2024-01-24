@@ -8,17 +8,16 @@ import { MaterialDesignModule } from 'src/app/material-design/material-design.mo
   standalone: true,
   imports: [
     CommonModule,
-    MaterialDesignModule],
+    MaterialDesignModule,
+  ],
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
 
-  isLoading: boolean = false;
   constructor(private router: Router) {}
 
   login() {
-    this.isLoading = true;
     setTimeout(() => {
       this.router.navigate(['/']);
     }, 2000);

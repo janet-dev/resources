@@ -15,11 +15,9 @@ import { MaterialDesignModule } from 'src/app/material-design/material-design.mo
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  isLoading: boolean = false;
   constructor(private router: Router) {}
 
   register() {
-    this.isLoading = true;
     setTimeout(() => {
       this.router.navigate(['/']);
     }, 2000);
