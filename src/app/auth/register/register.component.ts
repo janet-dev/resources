@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
+
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
 
 
@@ -9,18 +11,23 @@ import { MaterialDesignModule } from 'src/app/material-design/material-design.mo
   standalone: true,
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     MaterialDesignModule,
   ],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+  registerForm = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl(''),
+    confirmPassword: new FormControl(''),
+  });
+
   constructor(private router: Router) {}
 
   register() {
-    setTimeout(() => {
-      this.router.navigate(['/']);
-    }, 2000);
+    console.log(this.registerForm.value);
   }
 
 }

@@ -6,31 +6,36 @@
             <mat-card-title>Register Here</mat-card-title>
             <mat-card-subtitle>Enter email & create password</mat-card-subtitle>
 
-            <form action="" class="flex flex-col">
+            <form  [formGroup]="registerForm" (ngSubmit)="register()" class="flex flex-col">
 
                 <mat-card-content>
                     <mat-form-field appearance="fill">
                         <mat-label>Email</mat-label>
-                        <input matInput type="email" placeholder="Enter email" required>
+                        <input matInput type="email" placeholder="Enter email" formControlName="email" required>
                     </mat-form-field>
         
                     <mat-form-field appearance="fill">
                         <mat-label>Password</mat-label>
-                        <input matInput type="password" placeholder="Enter password" required>
+                        <input matInput type="password" placeholder="Enter password" formControlName="password" required>
                     </mat-form-field>
-                    
                                         
                     <mat-form-field appearance="fill">
                         <mat-label>Confirm Password</mat-label>
-                        <input matInput type="password" placeholder="Confirm password" required>
+                        <input matInput type="password" placeholder="Confirm password" formControlName="confirmPassword" required>
                     </mat-form-field>
+
+                    @if (registerForm.invalid && (registerForm.touched || registerForm.dirty)) {
+                        <div class="p-2 bg-red-300 text-red-800 rounded">
+                            All details must be entered.
+                        </div>
+                    }
 
                 </mat-card-content>
 
                 <mat-divider></mat-divider>
 
                 <mat-card-actions class="mt-2">
-                    <button (click)="register()" type="submit" color="warn" mat-raised-button>Register</button>
+                    <button type="submit" [disabled]="registerForm.invalid" color="warn" mat-raised-button>Register</button>
                 </mat-card-actions>
 
             </form>

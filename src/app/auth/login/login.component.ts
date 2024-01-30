@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
-//import { LoginForm } from '../auth';
 
 
 @Component({
