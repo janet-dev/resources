@@ -1,8 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
+//import { LoginForm } from '../auth';
+
 
 @Component({
   selector: 'app-login',
@@ -16,14 +18,15 @@ import { MaterialDesignModule } from 'src/app/material-design/material-design.mo
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  email = new FormControl('');
+  loginForm = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl('')
+  });
 
   constructor(private router: Router) {}
 
   login() {
-    setTimeout(() => {
-      this.router.navigate(['/']);
-    }, 2000);
+    console.log(this.loginForm.value);
   }
 
 }

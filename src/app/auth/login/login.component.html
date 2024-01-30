@@ -1,3 +1,8 @@
+<!-- 
+    Using Reactive Forms 
+    https://angular.dev/guide/forms/reactive-forms
+-->
+
 <div class="flex">
     <div class="m-auto">
 
@@ -6,25 +11,30 @@
             <mat-card-title>Login Here</mat-card-title>
             <mat-card-subtitle>Enter email & password</mat-card-subtitle>
 
-            <form action="" class="flex flex-col">
+            <form [formGroup]="loginForm" (ngSubmit)="login()" class="flex flex-col">
 
                 <mat-card-content>
                     <mat-form-field appearance="fill">
                         <mat-label>Email</mat-label>
-                        <input matInput type="email" placeholder="Enter email" [formControl]="email" required>
+                        <input matInput type="email" placeholder="Enter email" formControlName="email" required>
                     </mat-form-field>
-                    {{  email.value }}
         
                     <mat-form-field appearance="fill">
                         <mat-label>Password</mat-label>
-                        <input matInput type="password" placeholder="Enter password" required>
+                        <input matInput type="password" placeholder="Enter password" formControlName="password" required>
                     </mat-form-field>
+
+                    @if (loginForm.invalid && (loginForm.touched || loginForm.dirty)) {
+                        <div class="p-2 bg-red-300 text-red-800 rounded">
+                            Email & Password must be entered.
+                        </div>
+                    }
                 </mat-card-content>
 
                 <mat-divider></mat-divider>
 
                 <mat-card-actions class="mt-2">
-                    <button (click)="login()" type="submit" color="warn" mat-raised-button>Login</button>
+                    <button type="submit" [disabled]="loginForm.invalid" color="warn" mat-raised-button>Login</button>
                 </mat-card-actions>
 
             </form>
