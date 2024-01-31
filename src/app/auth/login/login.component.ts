@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
+import { AuthService } from '../auth.service';
 
 
 @Component({
@@ -22,10 +22,11 @@ export class LoginComponent {
     password: new FormControl('')
   });
 
-  constructor(private router: Router) {}
+  constructor(private authService: AuthService) {}
 
   login() {
-    console.log(this.loginForm.value);
-  }
+    this.authService.login(this.loginForm);
+    
 
+  }
 }

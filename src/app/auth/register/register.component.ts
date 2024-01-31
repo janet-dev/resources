@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
+import { AuthService } from '../auth.service';
 
 
 @Component({
@@ -24,10 +24,18 @@ export class RegisterComponent {
     confirmPassword: new FormControl(''),
   });
 
-  constructor(private router: Router) {}
+  passwordMatched: boolean = true;
+
+  constructor(private authService: AuthService) {}
 
   register() {
-    console.log(this.registerForm.value);
+    if (this.registerForm.get('password')?.value !== this.registerForm.get('confirmPassword')?.value) {
+      this.passwordMatched = false;
+      return;
+    }
+
+    this.authService.register(this.registerForm);
+
   }
 
 }
