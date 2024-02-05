@@ -1,3 +1,5 @@
+// Admin login/register
+
 import { Injectable } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -31,7 +33,7 @@ export class AuthService {
           console.log(email, password);
           this.isAuthenticated = true;
           console.log(this.isAuthenticated);
-          this.router.navigate(['/']);
+          this.router.navigate(['admin/resources']);
         })
         .catch((error) => {
           const errorCode = error.code;
