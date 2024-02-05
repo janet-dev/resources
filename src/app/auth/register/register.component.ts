@@ -29,13 +29,7 @@ export class RegisterComponent {
   constructor(private authService: AuthService) {}
 
   register() {
-    if (this.registerForm.get('password')?.value !== this.registerForm.get('confirmPassword')?.value) {
-      this.passwordMatched = false;
-      return;
-    }
-
     this.authService.register(this.registerForm);
-
   }
 
 }

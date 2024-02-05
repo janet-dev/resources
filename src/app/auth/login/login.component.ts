@@ -17,16 +17,16 @@ import { AuthService } from '../auth.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  loginForm = new FormGroup({
+  
+  loginForm: any = new FormGroup({
     email: new FormControl(''),
-    password: new FormControl('')
+    password: new FormControl(''),
   });
 
   constructor(private authService: AuthService) {}
 
   login() {
+    console.log(this.loginForm.value);
     this.authService.login(this.loginForm);
-    
-
   }
 }
