@@ -8,7 +8,10 @@
     </button>
     <mat-menu #menu="matMenu">
         <mat-nav-list>
-            <a mat-list-item routerLink="./{{  nav | lowercase}}" *ngFor="let nav of navList">{{nav}}</a>
+            <a 
+              mat-list-item routerLink="./{{  nav | lowercase}}" 
+              *ngFor="let nav of navList">{{nav}}
+            </a>
         </mat-nav-list>
     </mat-menu>
     

@@ -13,7 +13,7 @@ import { AuthService } from './auth/auth.service'; // Import the AuthService cla
 
 export class AppComponent implements OnInit{
   title = 'Resources';
-  navList = ['Home', 'Resources', 'Admin/Resources', 'Login', 'Register'];
+  navList = ['Home', 'Resources', 'Register', 'Login', 'Logout'];
 
   constructor(private authService: AuthService) {} // Declare authService as a property
 
@@ -22,9 +22,15 @@ export class AppComponent implements OnInit{
       // https://stackoverflow.com/questions/53115665/cannot-find-name-require-in-angular-7typescript-3-1-3
       const{ firebaseConfig } = require('./firebase.config'); 
       initializeApp(firebaseConfig);
+
   }
 
   isAuthenticated() {
     return this.authService.isAuthenticated;
   }
+
+  logout() {
+    this.authService.logout();
+  }
+
 }

@@ -1,13 +1,14 @@
 // Admin login/register
 
 import { Injectable } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
 
 import { 
   createUserWithEmailAndPassword, 
   getAuth, 
-  signInWithEmailAndPassword 
+  signInWithEmailAndPassword,
+  signOut
 } from 'firebase/auth';
 
 
@@ -62,4 +63,16 @@ export class AuthService {
         });
     }
   }
+
+  logout() {
+    const auth = getAuth();
+    signOut(auth).then(() => {
+      // Sign-out successful.
+      this.router.navigate(['login']);
+      this.isAuthenticated = false;
+    }).catch((error) => {
+      // An error happened.
+    });
+  }
+
 }
