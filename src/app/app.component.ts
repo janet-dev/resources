@@ -13,7 +13,7 @@ import { AuthService } from './auth/auth.service'; // Import the AuthService cla
 
 export class AppComponent implements OnInit{
   title = 'Resources';
-  navList = ['Home', 'Resources', 'Admin/Resources', 'Register', 'Login', 'Logout'];
+  navList = ['Home', 'Resources', 'Admin/Resources', 'Register', 'Login'];
 
   constructor(private authService: AuthService) {} // Declare authService as a property
 
