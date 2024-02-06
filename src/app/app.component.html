@@ -1,6 +1,10 @@
 <mat-toolbar color="primary" class="flex justify-between p-4">
   <a routerLink="home" class="text-white">bōc-hord</a>
 
+  @if(isAuthenticated()) {
+    <button mat-icon-button (click)="logout()" class="mx-4"><mat-icon>subdirectory_arrow_left</mat-icon></button>
+  }
+
   <div class="demo-section">
     
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon button for the menu">

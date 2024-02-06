@@ -31,9 +31,8 @@ export class AuthService {
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           // Signed in 
-          console.log(email, password);
+          console.log('logged in: ', email, password);
           this.isAuthenticated = true;
-          console.log(this.isAuthenticated);
           this.router.navigate(['admin/resources']);
         })
         .catch((error) => {
@@ -66,13 +65,14 @@ export class AuthService {
 
   logout() {
     const auth = getAuth();
-    signOut(auth).then(() => {
-      // Sign-out successful.
-      this.router.navigate(['login']);
-      this.isAuthenticated = false;
-    }).catch((error) => {
-      // An error happened.
-    });
+    signOut(auth)
+      .then(() => {
+        this.router.navigate(['home']);
+        this.isAuthenticated = false;
+      })
+      .catch((error) => {
+        // An error happened.
+      });
   }
 
 }

@@ -6,12 +6,13 @@ import { AdminResourcesComponent } from './admin-resources/admin-resources.compo
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { authGuard } from './auth/auth.guard';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'resources', component: ResourcesComponent },
   { path: 'resources/detail', component: ResourceDetailComponent },
-  { path: 'admin/resources', component: AdminResourcesComponent },
+  { path: 'admin/resources', component: AdminResourcesComponent, canActivate: [authGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
