@@ -1,7 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Firebase
-/src/app/firebase.config.js
+#/src/app/firebase.config.js
 
 # Compiled output
 /dist
