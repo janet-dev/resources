@@ -6,7 +6,8 @@
 
   <div class="demo-section">
     
-    <button mat-icon-button [matMenuTriggerFor]="menu" 
+    <button mat-icon-button 
+            [matMenuTriggerFor]="menu" 
             aria-label="icon button for the menu"
             matTooltip="Info about the action"
             matTooltip="Menu">
@@ -15,7 +16,8 @@
     <mat-menu #menu="matMenu">
         <mat-nav-list>
             <a 
-              mat-list-item routerLink="./{{  nav | lowercase}}" 
+              mat-list-item 
+              routerLink="./{{  nav | lowercase}}" 
               *ngFor="let nav of navList">{{nav}}
             </a>
         </mat-nav-list>
@@ -23,7 +25,8 @@
 
 
     @if(isAuthenticated()) {
-      <button mat-icon-button (click)="logout()" 
+      <button mat-icon-button 
+              (click)="logout()" 
               class="mx-4" 
               aria-label="icon button for logging out"
               matTooltip="Logout">
