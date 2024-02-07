@@ -1,32 +1,7 @@
 [
     {
-        "id": 1,
-        "category": "book",
-        "name": "Learning Angular",
-        "description": "A no-nonsense guide to building web applications with Angular 15, 4th Edition Paperback – 23 Feb. 2023",
-        "website": "https://www.packtpub.com/product/learning-angular-fourth-edition/9781803240602",
-        "price": "31.99",
-        "imageUrl": "https://m.media-amazon.com/images/I/71UdanWaD-L._SL1360_.jpg",
-        "tag": "Angular",
-        "createdBy": "Janet",
-        "date": "2023"
-
-    },
-    {
-        "id": 2,
-        "category": "book",
-        "name": "Think Python 2e",
-        "description": "Think Python is an introduction to Python programming for beginners. It uses Python3.",
-        "website": "https://greenteapress.com/wp/think-python-2e/",
-        "price": "0",
-        "imageUrl": "http://greenteapress.com/thinkpython2/think_python2_medium.jpg",
-        "tag": "Python",
-        "createdBy": "Janet",
-        "date": "2023"
-    },
-    {
-        "id": 3,
-        "category": "app",
+        "id": 1001,
+        "category": "apps",
         "name": "SoloLearn",
         "description": "Mobile app and desktop learning platform. Includes web dev, Python, Java, C#, Angular.",
         "website": "https://www.sololearn.com/",
@@ -37,44 +12,20 @@
         "date": "2023"
     },
     {
-        "id": 4,
-        "category": "meetup",
-        "name": "codebar",
-        "description": "Regular programming workshops trying to bridge the diversity gap! We are all about community and making a difference.",
-        "website": "https://codebar.io/",
+        "id": 2001,
+        "category": "courses",
+        "name": "Codecademy",
+        "description": "xxxxx",
+        "website": "https://www.codecademy.com/",
         "price": "0",
-        "imageUrl": "https://pbs.twimg.com/profile_images/1085967660582526977/mAbluXvA_400x400.jpg",
-        "tag": "Programming",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1676596700868141066/LTr9VrPA_400x400.jpg",
+        "tag": "Software",
         "createdBy": "Janet",
-        "date": "2023"
+        "date": "2024"
     },
     {
-        "id": 5,
-        "category": "video",
-        "name": "Angular Material",
-        "description": "Angular Material 14 course 2022 - 2h15m",
-        "website": "https://www.youtube.com/watch?v=DaE_RpWRlJI&t=4285s",
-        "price": "0",
-        "imageUrl": "https://pbs.twimg.com/profile_images/1233770296336953345/NsZ5uQsd_400x400.jpg",
-        "tag": "Angular",
-        "createdBy": "Janet",
-        "date": "2023"
-    },
-    {
-        "id": 6,
-        "category": "video",
-        "name": "Angular 14",
-        "description": "Angular 14 full course 2022 for beginners - 3h54m",
-        "website": "https://www.youtube.com/watch?v=IYI0em-xT28&t=314s",
-        "price": "0",
-        "imageUrl": "https://pbs.twimg.com/profile_images/1233770296336953345/NsZ5uQsd_400x400.jpg",
-        "tag": "Angular",
-        "createdBy": "Janet",
-        "date": "2023"
-    },
-    {
-        "id": 7,
-        "category": "tutorials",
+        "id": 2002,
+        "category": "courses",
         "name": "Total TypeScript",
         "description": "A collection of free, exercise-driven, in-depth TypeScript tutorials for you to use on your journey to TypeScript wizardry.",
         "website": "https://www.totaltypescript.com/tutorials",
@@ -85,8 +36,56 @@
         "date": "2023"
     },
     {
-        "id": 8,
-        "category": "book",
+        "id": 2003,
+        "category": "courses",
+        "name": "Amber Israelsen",
+        "description": "Amber has been a software developer and technical trainer since the early 2000s.  In recent years, she has focused on teaching AI, machine learning, AWS and Power Apps, teaching students around the world.  She also works to bridge the gap between developers, designers and businesspeople with her expertise in visual communication, user experience and business/professional skills.",
+        "website": "https://www.amberisraelsen.com/about-me",
+        "price": "Varies",
+        "imageUrl": "https://images.squarespace-cdn.com/content/v1/556b4311e4b0d5c43498dd94/5bd54007-61e0-4c49-acf1-51d39fc7d682/profile2-square-small.jpg?format=500w",
+        "tag": "AI",
+        "createdBy": "Janet",
+        "date": "2024"
+    },
+    {
+        "id": 2004,
+        "category": "courses",
+        "name": "Dev Ops with Nana",
+        "description": "Hi, my name is Nana. I'm a DevOps Consultant and Trainer. Over the last years, I've taught millions of people on how to become professional DevOps engineers through my DevOps bootcamp, Youtube channel and online courses, as well as company trainings & workshops.",
+        "website": "https://www.techworld-with-nana.com/",
+        "price": "Varies",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1547545568565760002/q54KfwrN_400x400.jpg",
+        "tag": "DevOps",
+        "createdBy": "Janet",
+        "date": "2024"
+    },
+    {
+        "id": 3001,
+        "category": "videos",
+        "name": "Angular Material",
+        "description": "Angular Material 14 course 2022 - 2h15m",
+        "website": "https://www.youtube.com/watch?v=DaE_RpWRlJI&t=4285s",
+        "price": "0",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1233770296336953345/NsZ5uQsd_400x400.jpg",
+        "tag": "Angular",
+        "createdBy": "Janet",
+        "date": "2023"
+    },
+    {
+        "id": 3002,
+        "category": "videos",
+        "name": "Angular 14",
+        "description": "Angular 14 full course 2022 for beginners - 3h54m",
+        "website": "https://www.youtube.com/watch?v=IYI0em-xT28&t=314s",
+        "price": "0",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1233770296336953345/NsZ5uQsd_400x400.jpg",
+        "tag": "Angular",
+        "createdBy": "Janet",
+        "date": "2023"
+    },
+    {
+        "id": 4001,
+        "category": "books",
         "name": "Packt Publishing",
         "description": "Subscribe monthly to unlimited access to 7,000+ expert-authored eBooks and video courses on new and emerging tech",
         "website": "https://www.packtpub.com/",
@@ -94,20 +93,91 @@
         "imageUrl": "https://pbs.twimg.com/profile_images/1537354681462181893/b0CNDFlt_400x400.jpg",
         "tag": "Tech",
         "createdBy": "Janet",
-        "date": "2023"
+        "date": "2024"
     },
-
     {
-        "id": 99,
-        "category": "xxxxx",
-        "name": "xxxxx",
-        "description": "xxxxx",
-        "website": "xxxxx",
-        "price": "0",
-        "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
-        "tag": "xxxxx",
+        "id": 4002,
+        "category": "books",
+        "name": "Learning Angular",
+        "description": "A no-nonsense guide to building web applications with Angular 15, 4th Edition Paperback – 23 Feb. 2023",
+        "website": "https://www.packtpub.com/product/learning-angular-fourth-edition/9781803240602",
+        "price": "31.99",
+        "imageUrl": "https://m.media-amazon.com/images/I/71UdanWaD-L._SL1360_.jpg",
+        "tag": "Angular",
         "createdBy": "Janet",
         "date": "2023"
+    },
+    {
+        "id": 4003,
+        "category": "books",
+        "name": "Think Python 2e",
+        "description": "Think Python is an introduction to Python programming for beginners. It uses Python3.",
+        "website": "https://greenteapress.com/wp/think-python-2e/",
+        "price": "0",
+        "imageUrl": "http://greenteapress.com/thinkpython2/think_python2_medium.jpg",
+        "tag": "Python",
+        "createdBy": "Janet",
+        "date": "2023"
+    },
+    {
+        "id": 5001,
+        "category": "community",
+        "name": "codebar",
+        "description": "Regular programming workshops trying to bridge the diversity gap! We are all about community and making a difference.",
+        "website": "https://codebar.io/",
+        "price": "0",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1085967660582526977/mAbluXvA_400x400.jpg",
+        "tag": "Programming",
+        "createdBy": "Janet",
+        "date": "2023"
+    },
+    {
+        "id": 5002,
+        "category": "community",
+        "name": "eddiehub",
+        "description": "EddieHub is a community of learners, developers, and creators. We are passionate about open source and building a community that is welcoming and inclusive.",
+        "website": "https://www.eddiehub.org/",
+        "price": "0",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1640177590601416704/_Gs3eest_400x400.jpg",
+        "tag": "Open Source",
+        "createdBy": "Janet",
+        "date": "2024"
+    },
+    {
+        "id": 5003,
+        "category": "community",
+        "name": "Angular London",
+        "description": "Angular London is the largest Angular meetup in Europe. We hold meetups in various locations in and around London. Our meetup focuses on learning about Angular, sharing knowledge and networking with fellow Angularians.",
+        "website": "https://www.meetup.com/angular-london/",
+        "price": "0",
+        "imageUrl": "https://pbs.twimg.com/profile_images/974694964251758594/1lKwkFV0_400x400.jpg",
+        "tag": "Angular",
+        "createdBy": "author",
+        "date": "2024"
+    },
+    {
+        "id": 5003,
+        "category": "community",
+        "name": "Angular Birmingham",
+        "description": "Sharing best practices, ideas, experiences and helping each other become Angular Ninjas!",
+        "website": "https://www.meetup.com/angular-birmingham/",
+        "price": "0",
+        "imageUrl": "https://pbs.twimg.com/profile_images/989263965426470914/NvCmzUH-_400x400.jpg",
+        "tag": "Angular",
+        "createdBy": "author",
+        "date": "2024"
+    },
+    {
+        "id": 9999,
+        "category": "medium",
+        "name": "item",
+        "description": "description",
+        "website": "websiteURL",
+        "price": "0",
+        "imageUrl": "https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2371&q=80",
+        "tag": "Learning",
+        "createdBy": "author",
+        "date": "2024"
     }
 
 ]
