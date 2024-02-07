@@ -16,11 +16,19 @@ This app will include resources recommended by users for engineers of all levels
 
 <h2 align="left"><img src="./docs/pictures/ng-version.png"></h2>
 
+## Live site deployed on Firebase 
+
+### [resources-ng app](https://resources-ng.web.app/)
+
 ## Screenshots
 
-### Home
+### Home on /home
 
 <h2 align="left"><img src="./docs/pictures/home.png"></h2>
+
+### Register on /register
+
+<h2 align="left"><img src="./docs/pictures/register.png"></h2>
 
 ### Login on /login
 
@@ -34,35 +42,35 @@ This app will include resources recommended by users for engineers of all levels
 
 <h2 align="left"><img src="./docs/pictures/detail.png"></h2>
 
-### Table in /admin/resources
+### Table in /admin/resources [seen in login only]
 
 <h2 align="left"><img src="./docs/pictures/admin-table.png"></h2>
 
 
 # Project - still to do
 
-- configure login component (reactive forms)
-    - possibly with Google Firebase
-- add registration component
-- configure notifications
+- improve login/register components (reactive forms)
+- add notifications
 - add profile page
 - etc.
 
 # Credits
 
-[Link to Angular Material Course 2022](https://www.youtube.com/watch?v=DaE_RpWRlJI&t=4285s) from Bitfumes, which inspired this project.
+[Angular Material Course 2022](https://www.youtube.com/watch?v=DaE_RpWRlJI&t=4285s) from Bitfumes, which inspired this project.
 
-[Link to Bitfumes' Material course on GitHub](https://github.com/bitfumes/angular-material-2022/tree/main) by @sarthaksavvy.
+[Bitfumes' Material course on GitHub](https://github.com/bitfumes/angular-material-2022/tree/main) by @sarthaksavvy.
 
-[Link to V15 Angular Material](https://v15.material.angular.io/) which was used to structure the user interface.
+[V15 Angular Material](https://v15.material.angular.io/) which was used to structure the user interface.
 
-[Link to Tailwind CSS](https://tailwindcss.com/) which was used to style this project.
+[Tailwind CSS](https://tailwindcss.com/) which was used to style this project.
 
-[Link to article: Reading data from JSON file using HttpClient](https://medium.com/@anooprvarrier/angular-reading-data-from-json-file-using-httpclient-3c46ba1aaf22) by Anoop R Warrier on Medium.
+[Reading data from JSON file using HttpClient](https://medium.com/@anooprvarrier/angular-reading-data-from-json-file-using-httpclient-3c46ba1aaf22) by Anoop R Warrier on Medium.
 
-[Link to library photo](https://unsplash.com/@paul__schafer) by Paul Schafer on Unsplash.
+[Issues with GitHub workflows and Firebase deployment](https://github.com/FirebaseExtended/action-hosting-deploy/issues/283) by lisk8 and JuHue
 
-[Link to 'Keep Learning' photo](https://unsplash.com/@fakurian) by Milad Fakurian on Unsplash.
+[Photo of library books](https://unsplash.com/@paul__schafer) by Paul Schafer on Unsplash.
+
+[Photo of signpost saying 'Keep Learning'](https://unsplash.com/@fakurian) by Milad Fakurian on Unsplash.
 
 Jake Pritchard for help with the resources service. 
 
