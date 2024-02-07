@@ -1,10 +1,16 @@
 <mat-toolbar color="primary" class="flex justify-between p-4">
-  <a routerLink="home" class="text-white">bōc-hord</a>
+  <a routerLink="home" 
+      class="text-white" 
+      aria-label="branding button to back home" 
+      matTooltip="Home">bōc-hord</a>
 
   <div class="demo-section">
     
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="icon button for the menu">
-        <mat-icon>menu</mat-icon>
+    <button mat-icon-button [matMenuTriggerFor]="menu" 
+            aria-label="icon button for the menu"
+            matTooltip="Info about the action"
+            matTooltip="Menu">
+      <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
         <mat-nav-list>
@@ -17,7 +23,10 @@
 
 
     @if(isAuthenticated()) {
-      <button mat-icon-button (click)="logout()" class="mx-4">
+      <button mat-icon-button (click)="logout()" 
+              class="mx-4" 
+              aria-label="icon button for logging out"
+              matTooltip="Logout">
         <mat-icon>exit_to_app</mat-icon>
       </button>
   }
