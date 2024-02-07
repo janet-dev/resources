@@ -85,6 +85,19 @@
         "date": "2023"
     },
     {
+        "id": 8,
+        "category": "book",
+        "name": "Packt Publishing",
+        "description": "Subscribe monthly to unlimited access to 7,000+ expert-authored eBooks and video courses on new and emerging tech",
+        "website": "https://www.packtpub.com/",
+        "price": "13.99",
+        "imageUrl": "https://pbs.twimg.com/profile_images/1537354681462181893/b0CNDFlt_400x400.jpg",
+        "tag": "Tech",
+        "createdBy": "Janet",
+        "date": "2023"
+    },
+
+    {
         "id": 99,
         "category": "xxxxx",
         "name": "xxxxx",
