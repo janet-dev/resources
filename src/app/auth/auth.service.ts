@@ -22,17 +22,16 @@ export class AuthService {
 
   login(loginForm: FormGroup) {
     const auth = getAuth();
+    const admin: string = 'BlM23QBsAOQWrW1QBgONrepiOdC3';
 
     const email = loginForm.get('email')?.value;
     const password = loginForm.get('password')?.value;
-    const admin: string = 'BlM23QBsAOQWrW1QBgONrepiOdC3';
     
     if (email && password) {
       
       signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           // Signed in 
-          console.log('logged in: ', email, password);
           this.isAuthenticated = true;
           if (auth.currentUser?.uid === admin) {
             alert('\nYou are now logged in as ADMIN.\n\nLog out when finished.');

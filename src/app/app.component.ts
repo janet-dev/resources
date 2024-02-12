@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { initializeApp } from "firebase/app";
 import { AuthService } from './auth/auth.service'; // Import the AuthService class
-
-// import { firebaseConfig } from './firebase.config';
+import { getAuth } from 'firebase/auth';
 
 @Component({
   selector: 'app-root',
@@ -10,10 +9,10 @@ import { AuthService } from './auth/auth.service'; // Import the AuthService cla
   styleUrls: ['./app.component.scss'],
 })
 
-
 export class AppComponent implements OnInit{
   title = 'Resources';
-  navList = ['Home', 'Resources', 'Admin/Resources', 'Register', 'Login'];
+  navList = ['Home', 'Register', 'Login'];
+  admin: string = 'BlM23QBsAOQWrW1QBgONrepiOdC3';
 
   constructor(private authService: AuthService) {} // Declare authService as a property
 
@@ -26,6 +25,13 @@ export class AppComponent implements OnInit{
   }
 
   isAuthenticated() {
+    if (this.authService.isAuthenticated && getAuth().currentUser?.uid === this.admin) { 
+      this.navList = ['Home', 'Resources', 'Admin/Resources' ];
+    } else if (this.authService.isAuthenticated) {
+      this.navList = ['Home', 'Resources'];
+    } else {
+      this.navList = ['Home', 'Register', 'Login'];
+    }
     return this.authService.isAuthenticated;
   }
 
