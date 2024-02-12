@@ -25,6 +25,7 @@ export class AuthService {
 
     const email = loginForm.get('email')?.value;
     const password = loginForm.get('password')?.value;
+    const admin: string = 'BlM23QBsAOQWrW1QBgONrepiOdC3';
     
     if (email && password) {
       
@@ -33,8 +34,13 @@ export class AuthService {
           // Signed in 
           console.log('logged in: ', email, password);
           this.isAuthenticated = true;
-          alert('\nYou are now logged in.\n\nLog out when finished.');
-          this.router.navigate(['resources']);
+          if (auth.currentUser?.uid === admin) {
+            alert('\nYou are now logged in as ADMIN.\n\nLog out when finished.');
+            this.router.navigate(['admin/resources']);
+          } else {
+            alert('\nYou are now logged in.\n\nLog out when finished.');
+            this.router.navigate(['resources']);
+          }
         })
         .catch((error) => {
           const errorCode = error.code;
