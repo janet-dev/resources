@@ -33,7 +33,8 @@ export class AuthService {
           // Signed in 
           console.log('logged in: ', email, password);
           this.isAuthenticated = true;
-          this.router.navigate(['admin/resources']);
+          alert('\nYou are now logged in.\n\nLog out when finished.');
+          this.router.navigate(['resources']);
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -54,7 +55,7 @@ export class AuthService {
         .then((userCredential) => {
           // Signed up 
           this.isAuthenticated = true;
-          alert('\n\n\nThank you for registering.')
+          alert('\n\n\nThank you for registering.');
           this.router.navigate(['resources']);
         })
         .catch((error) => {
