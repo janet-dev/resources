@@ -54,6 +54,8 @@ export class AuthService {
         .then((userCredential) => {
           // Signed up 
           this.isAuthenticated = true;
+          alert('\n\n\nThank you for registering.')
+          this.router.navigate(['resources']);
         })
         .catch((error) => {
           const errorCode = error.code;
