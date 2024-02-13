@@ -25,15 +25,19 @@ export class AppComponent implements OnInit{
   }
 
   isAuthenticated() {
-    if (this.authService.isAuthenticated && getAuth().currentUser?.uid === this.admin) { 
-      this.navList = ['Home', 'Resources', 'Admin/Resources' ];
-    } else if (this.authService.isAuthenticated) {
-      this.navList = ['Home', 'Resources'];
-    } else {
-      this.navList = ['Home', 'Register', 'Login'];
-    }
+    // Expression has changed after it was checked
+    // https://blog.angular-university.io/angular-debugging/
+    setTimeout(() => {
+      if (this.authService.isAuthenticated && getAuth().currentUser?.uid === this.admin) { 
+        this.navList = ['Home', 'Resources', 'Admin/Resources' ];
+      } else if (this.authService.isAuthenticated) {
+        this.navList = ['Home', 'Resources'];
+      } else {
+        this.navList = ['Home', 'Register', 'Login'];
+      }
+    });
     return this.authService.isAuthenticated;
-  }
+  } 
 
   logout() {
     console.log('logging out');

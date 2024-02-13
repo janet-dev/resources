@@ -26,7 +26,7 @@ export class LoginComponent {
   constructor(private authService: AuthService) {}
 
   login() {
-    console.log(this.loginForm.value);
+    //console.log(this.loginForm.value);
     this.authService.login(this.loginForm);
   }
 }
