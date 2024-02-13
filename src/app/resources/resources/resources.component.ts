@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SingleResourceComponent } from '../single-resource/single-resource.component';
 import { MaterialDesignModule } from 'src/app/material-design/material-design.module';
-import { ResourceModel } from '../models/resource.model';
 import { ResourcesService } from 'src/app/services/resources.service';
 import { take } from 'rxjs';
 
