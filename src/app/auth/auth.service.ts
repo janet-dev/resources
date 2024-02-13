@@ -20,6 +20,7 @@ export class AuthService {
 
   constructor(private router: Router) { }
 
+// ------------------------------ Login ------------------------------
   login(loginForm: FormGroup) {
     const auth = getAuth();
     const admin: string = 'BlM23QBsAOQWrW1QBgONrepiOdC3';
@@ -45,10 +46,14 @@ export class AuthService {
           const errorCode = error.code;
           const errorMessage = error.message;
           this.isAuthenticated = false;
+          alert('\n\nIncorrect email/password');
+          window.location.href="/login"; // refresh page
         });
+
     }
   }
 
+// ------------------------------ Register ------------------------------
   passwordMatched: boolean = true;
   register(registerForm: FormGroup) {
     const auth = getAuth();
@@ -71,6 +76,7 @@ export class AuthService {
     }
   }
 
+// ------------------------------ Logout ------------------------------
   logout() {
     const auth = getAuth();
     signOut(auth)
