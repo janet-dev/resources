@@ -72,6 +72,8 @@ export class AuthService {
           const errorCode = error.code;
           const errorMessage = error.message;
           this.isAuthenticated = false;
+          alert('\n\nIncorrect email/password format.\n\nPlease try again.');
+          window.location.href="/register"; // refresh page
         });
     }
   }

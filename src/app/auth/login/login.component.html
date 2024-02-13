@@ -11,17 +11,30 @@
             <mat-card-title>Login Here</mat-card-title>
             <mat-card-subtitle>Enter email & password</mat-card-subtitle>
 
-            <form [formGroup]="loginForm" (ngSubmit)="login()" class="flex flex-col">
+            <form 
+                [formGroup]="loginForm" 
+                (ngSubmit)="login()" 
+                class="flex flex-col">
 
                 <mat-card-content>
                     <mat-form-field appearance="fill">
                         <mat-label>Email</mat-label>
-                        <input matInput type="email" placeholder="Enter email" formControlName="email" required>
+                        <input 
+                            matInput 
+                            type="email" 
+                            placeholder="Enter email" 
+                            formControlName="email" 
+                            required>
                     </mat-form-field>
         
                     <mat-form-field appearance="fill">
                         <mat-label>Password</mat-label>
-                        <input matInput type="password" placeholder="Enter password" formControlName="password" required>
+                        <input 
+                            matInput 
+                            type="password" 
+                            placeholder="Enter password" 
+                            formControlName="password" 
+                            required>
                     </mat-form-field>
 
                     @if (loginForm.invalid && (loginForm.touched || loginForm.dirty)) {
@@ -34,7 +47,11 @@
                 <mat-divider></mat-divider>
 
                 <mat-card-actions class="mt-2">
-                    <button type="submit" [disabled]="loginForm.invalid" color="warn" mat-raised-button>Login</button>
+                    <button 
+                        type="submit" 
+                        [disabled]="loginForm.invalid" 
+                        color="warn" 
+                        mat-raised-button>Login</button>
                 </mat-card-actions>
 
             </form>
