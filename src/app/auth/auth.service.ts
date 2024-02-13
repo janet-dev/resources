@@ -46,7 +46,7 @@ export class AuthService {
           const errorCode = error.code;
           const errorMessage = error.message;
           this.isAuthenticated = false;
-          alert('\n\nIncorrect email/password');
+          alert('\n\nIncorrect login details.\n\nPlease try again.');
           window.location.href="/login"; // refresh page
         });
 
@@ -72,7 +72,7 @@ export class AuthService {
           const errorCode = error.code;
           const errorMessage = error.message;
           this.isAuthenticated = false;
-          alert('\n\nIncorrect email/password format.\n\nPlease try again.');
+          alert('\n\nIncorrect registration details.\n\nPlease try again.');
           window.location.href="/register"; // refresh page
         });
     }
