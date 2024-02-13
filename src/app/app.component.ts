@@ -25,7 +25,7 @@ export class AppComponent implements OnInit{
   }
 
   isAuthenticated() {
-    // Expression has changed after it was checked
+    // Console error: Expression has changed after it was checked
     // https://blog.angular-university.io/angular-debugging/
     setTimeout(() => {
       if (this.authService.isAuthenticated && getAuth().currentUser?.uid === this.admin) { 
