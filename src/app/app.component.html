@@ -15,11 +15,13 @@
     </button>
     <mat-menu #menu="matMenu">
         <mat-nav-list>
+          @for (nav of navList; track nav) {
             <a 
               mat-list-item 
-              routerLink="./{{  nav | lowercase}}" 
-              *ngFor="let nav of navList">{{nav}}
+              routerLink="./{{  nav | lowercase}}">
+              {{nav}}
             </a>
+            }
         </mat-nav-list>
     </mat-menu>
 
