@@ -12,4 +12,10 @@ It tried to force it to be
 
     @Output() fromResourcesData: ResourceModel[] = [];
 
-- 
+- Struggled with new features in Angular 17 e.g. control flow
+
+Q: convert *ngIf to Angular 17 new control flow
+
+A: In Angular 13 and later versions, the *ngIf directive can be replaced with the *ngIf 
+as syntax for better readability and control flow. 
+However, as of Angular 17, there's no new control flow introduced to replace *ngIf.
