@@ -19,6 +19,7 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
       // https://bobbyhadz.com/blog/typescript-could-not-find-a-declaration-file-for-module
       // https://stackoverflow.com/questions/53115665/cannot-find-name-require-in-angular-7typescript-3-1-3
+
       // *** Comment next 2 lines out during testing ***
       const{ firebaseConfig } = require('./firebase.config'); 
       initializeApp(firebaseConfig);
