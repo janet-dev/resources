@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { initializeApp } from "firebase/app";
 import { AuthService } from './auth/auth.service'; // Import the AuthService class
 import { getAuth } from 'firebase/auth';
-import { getFirestore } from "firebase/firestore";
+import { getDocs, getFirestore } from "firebase/firestore";
 import { collection, addDoc } from "firebase/firestore"; 
 
 
@@ -33,22 +33,29 @@ export class AppComponent implements OnInit{
 
       const db = getFirestore(app);
 
-      try {
-        const docRef = await addDoc(collection(db, "resources"), {
-          category: "apps",
-          name: "SoloLearn",
-          description: "Mobile app and desktop learning platform. Includes web dev, Python, Java, C#, Angular.",
-          website: "https://www.sololearn.com/",
-          price: "0",
-          imageUrl: "https://pbs.twimg.com/profile_images/1410707398021550084/MmGTT4dY_400x400.jpg",
-          tag: "Learning",
-          createdBy: "Janet",
-          date: "2023"
-          });
-        console.log("Document written with ID: ", docRef.id);
-      } catch (e) {
-        console.error("Error adding document: ", e);
-      }  
+      //------------------------------------------ add data
+      // try {
+      //   const docRef = await addDoc(collection(db, "resources"), {
+      //     category: "apps",
+      //     name: "SoloLearn",
+      //     description: "Mobile app and desktop learning platform. Includes web dev, Python, Java, C#, Angular.",
+      //     website: "https://www.sololearn.com/",
+      //     price: "0",
+      //     imageUrl: "https://pbs.twimg.com/profile_images/1410707398021550084/MmGTT4dY_400x400.jpg",
+      //     tag: "Learning",
+      //     createdBy: "Janet",
+      //     date: "2023"
+      //     });
+      //   console.log("Document written with ID: ", docRef.id);
+      // } catch (e) {
+      //   console.error("Error adding document: ", e);
+      // }
+
+      //------------------------------------------ read data
+      const querySnapshot = await getDocs(collection(db, "resources"));
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
+      });
 
   }
 
